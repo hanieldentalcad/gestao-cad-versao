@@ -1,9 +1,9 @@
 {
-  "build": 107,
-  "versao": "1.7",
+  "build": 108,
+  "versao": "1.8",
   "lancada": "2026-10-27",
   "novidades": [
-    "Download das versões novas protegido: só quem tem licença válida consegue baixar",
-    "Renovação automática da assinatura pela Hotmart"
+    "Novo tipo de licença: Cortesia (presente da HDC Works)",
+    "Download das versões novas protegido por licença"
   ]
 }
