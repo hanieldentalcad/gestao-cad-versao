@@ -1,9 +1,9 @@
 {
-  "build": 108,
-  "versao": "1.8",
+  "build": 109,
+  "versao": "1.9",
   "lancada": "2026-10-27",
   "novidades": [
-    "Novo tipo de licença: Cortesia (presente da HDC Works)",
-    "Download das versões novas protegido por licença"
+    "Proteção extra da licença",
+    "Política de Privacidade atualizada"
   ]
 }
