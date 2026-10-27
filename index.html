@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gestão de CAD — o sistema de gestão para cadistas</title>
+<meta name="description" content="Clientes, casos, financeiro e faturas com Pix, tudo num só lugar, no seu computador. Feito por um cadista, para cadistas.">
+<meta property="og:title" content="Gestão de CAD — o sistema de gestão para cadistas">
+<meta property="og:description" content="Clientes, casos, financeiro e faturas com Pix, tudo num só lugar.">
+<meta property="og:image" content="https://hanieldentalcad.github.io/gestao-cad-versao/imagens/01-capa-do-modulo-1920x1080.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#04040b;--s:#0c0b18;--s2:#121026;--line:rgba(255,255,255,.09);--t:#f3efe6;--m:#a49fb6;--g:#d9b46a;--p:#8b7cf6;--c:#5ec8d8}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--t);font-family:Sora,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:
+ radial-gradient(50% 40% at 85% 0%,rgba(139,124,246,.22),transparent 70%),
+ radial-gradient(45% 35% at 0% 60%,rgba(217,180,106,.10),transparent 70%)}
+a{color:inherit}
+img{max-width:100%;display:block}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+.ouro{background:linear-gradient(100deg,#f3d99b,#d9b46a 45%,#b98f45);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{display:inline-flex;align-items:center;gap:.6em;border:1px solid rgba(217,180,106,.45);color:var(--g);border-radius:999px;padding:.45em 1.1em;font-size:.78rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;background:rgba(217,180,106,.06)}
+.tag i{width:.45em;height:.45em;border-radius:50%;background:var(--g);box-shadow:0 0 10px var(--g)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;text-decoration:none;font-weight:600;border-radius:14px;padding:1em 1.8em;font-size:1rem;transition:transform .15s,box-shadow .15s}
+.btn-ouro{background:linear-gradient(100deg,#f0d390,#d9b46a 50%,#c39a50);color:#120e05;box-shadow:0 10px 40px rgba(217,180,106,.25)}
+.btn-ouro:hover{transform:translateY(-2px);box-shadow:0 14px 50px rgba(217,180,106,.35)}
+.btn-linha{border:1px solid var(--line);color:var(--t);background:rgba(255,255,255,.03)}
+.btn-linha:hover{border-color:rgba(255,255,255,.25)}
+nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);background:rgba(4,4,11,.7);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:64px}
+.marca{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none}
+.logo{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--g),var(--p));display:grid;place-items:center;color:#04040b;font-weight:800;font-size:.95rem}
+nav .btn{padding:.6em 1.2em;font-size:.88rem;border-radius:11px}
+section{padding:96px 0}
+h1{font-size:clamp(2.3rem,5.6vw,4.2rem);line-height:1.06;font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.8rem,3.8vw,2.7rem);line-height:1.12;font-weight:700;letter-spacing:-.015em}
+.sub{color:var(--m);font-size:clamp(1.02rem,1.6vw,1.2rem);font-weight:300}
+.hero{text-align:center;padding:80px 0 40px}
+.hero h1{margin:26px auto 22px;max-width:900px}
+.hero .sub{max-width:700px;margin:0 auto}
+.hero .acoes{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.hero small{display:block;color:var(--m);margin-top:14px;font-size:.82rem}
+.tela{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.12);background:var(--s);box-shadow:0 40px 120px rgba(0,0,0,.65),0 0 80px rgba(139,124,246,.16)}
+.tela .barra{height:30px;background:#14122a;display:flex;align-items:center;gap:7px;padding:0 12px}
+.tela .barra b{width:10px;height:10px;border-radius:50%;background:#3a3654}
+.hero .tela{margin:56px auto 0;max-width:1040px}
+.dor{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.card{background:linear-gradient(180deg,var(--s2),var(--s));border:1px solid var(--line);border-radius:18px;padding:28px}
+.card .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:rgba(139,124,246,.12);color:var(--p);margin-bottom:16px}
+.card p{color:#d3cee0}
+.centro{text-align:center;max-width:760px;margin:0 auto}
+.centro .sub{margin-top:16px}
+.feat{display:grid;grid-template-columns:1fr 1.25fr;gap:56px;align-items:center;margin-top:80px}
+.feat.inv{grid-template-columns:1.25fr 1fr}
+.feat.inv .txt{order:2}
+.feat h3{font-size:clamp(1.5rem,2.6vw,2rem);line-height:1.15;font-weight:700;margin:18px 0 14px}
+.feat p{color:var(--m)}
+.lista{list-style:none;margin-top:22px;display:grid;gap:12px}
+.lista li{display:flex;gap:12px;align-items:flex-start;color:#d8d3e6}
+.lista li:before{content:"✓";flex:none;width:24px;height:24px;border-radius:50%;background:rgba(217,180,106,.14);border:1px solid rgba(217,180,106,.5);display:grid;place-items:center;color:var(--g);font-size:.75rem;font-weight:700;margin-top:2px}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:80px}
+.mini h4{font-size:1.05rem;font-weight:600;margin-bottom:8px}
+.mini p{color:var(--m);font-size:.95rem}
+.faixa{background:linear-gradient(180deg,rgba(139,124,246,.07),rgba(139,124,246,0));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px}
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px;counter-reset:p}
+.passos .card:before{counter-increment:p;content:counter(p);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--g),#b98f45);color:#120e05;font-weight:800;margin-bottom:16px}
+.oferta{max-width:560px;margin:44px auto 0;text-align:left;border:1px solid rgba(217,180,106,.4);border-radius:24px;padding:40px;background:linear-gradient(180deg,#14112a,#0b0a17);box-shadow:0 0 80px rgba(217,180,106,.10)}
+.preco{display:flex;align-items:baseline;gap:8px;margin:14px 0 4px}
+.preco b{font-size:3.4rem;font-weight:800;letter-spacing:-.02em}
+.preco span{color:var(--m)}
+.oferta .btn{width:100%;margin-top:28px;font-size:1.05rem}
+.garantia{display:flex;gap:14px;align-items:flex-start;margin-top:22px;padding:16px;border-radius:14px;background:rgba(94,200,216,.06);border:1px solid rgba(94,200,216,.25);font-size:.9rem;color:#cfeef3}
+.alt{text-align:center;color:var(--m);font-size:.92rem;margin-top:22px}
+.alt a{color:var(--g)}
+.faq{max-width:780px;margin:44px auto 0;display:grid;gap:12px}
+details{border:1px solid var(--line);border-radius:14px;background:var(--s);padding:0 22px}
+summary{cursor:pointer;list-style:none;padding:20px 0;font-weight:600;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--g);font-size:1.3rem;line-height:1}
+details[open] summary:after{content:"–"}
+details p{color:var(--m);padding-bottom:20px}
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--m);font-size:.88rem}
+footer .w{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{text-decoration:none}
+@media (max-width:860px){
+ section{padding:72px 0}
+ .dor,.mini,.passos,.duas{grid-template-columns:1fr}
+ .feat,.feat.inv{grid-template-columns:1fr;gap:28px;margin-top:64px}
+ .feat.inv .txt{order:0}
+ .oferta{padding:28px}
+ nav .btn{display:none}
+ .tag{letter-spacing:.08em;font-size:.7rem}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="w">
+ <a class="marca" href="#"><span class="logo">G</span>Gestão de CAD</a>
+ <a class="btn btn-ouro" href="#oferta">Assinar — R$ 40/mês</a>
+</div></nav>
+
+<header class="hero"><div class="w">
+ <span class="tag"><i></i>Feito por um cadista, para cadistas</span>
+ <h1>O sistema de gestão <span class="ouro">feito para quem vive de CAD</span> odontológico.</h1>
+ <p class="sub">Clientes, casos, financeiro e faturas com Pix, tudo num só lugar, no seu computador. Pare de controlar seus trabalhos em planilhas, cadernos e conversas de WhatsApp.</p>
+ <div class="acoes">
+  <a class="btn btn-ouro" href="#oferta">Quero organizar meus casos</a>
+  <a class="btn btn-linha" href="#recursos">Ver o sistema por dentro</a>
+ </div>
+ <small>R$ 40 por mês · cancele quando quiser · garantia de 7 dias</small>
+ <div class="tela"><div class="barra"><b></b><b></b><b></b></div><img src="imagens/s-visao.png" alt="Visão geral do Gestão de CAD com receita, valores recebidos e gráfico do período" loading="eager"></div>
+</div></header>
+
+<section><div class="w">
+ <div class="centro">
+  <span class="tag"><i></i>O problema</span>
+  <h2 style="margin-top:18px">Você conhece essa rotina</h2>
+ </div>
+ <div class="dor">
+  <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><p>Caso chegando por WhatsApp, e-mail e Drive, e você sem saber em que etapa cada um está.</p></div>
+  <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><p>Fim do mês, e a dúvida: quem já pagou, quem está devendo, quanto eu realmente faturei?</p></div>
+  <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></div><p>Cobrança montada na mão, toda vez, para cada dentista ou laboratório.</p></div>
+ </div>
+ <p class="sub centro" style="margin-top:36px">O Gestão de CAD foi criado justamente para isso: organizar o dia a dia de quem vive de CAD odontológico.</p>
+</div></section>
+
+<section id="recursos" class="faixa"><div class="w">
+ <div class="centro">
+  <span class="tag"><i></i>O que você ganha</span>
+  <h2 style="margin-top:18px">Tudo o que o seu negócio de CAD precisa, <span class="ouro">sem complicação</span></h2>
+ </div>
+
+ <div class="feat">
+  <div class="txt">
+   <span class="tag"><i></i>Casos</span>
+   <h3>Cada caso na etapa certa</h3>
+   <p>Fazer, avaliação, ajustar, aguardando informação, urgente, feito. Você bate o olho e sabe o que priorizar.</p>
+   <ul class="lista"><li>Casos organizados por cliente e por etapa</li><li>Mude o status sem sair da tela</li><li>Valor de cada caso calculado por elemento</li></ul>
+  </div>
+  <div class="tela"><div class="barra"><b></b><b></b><b></b></div><img src="imagens/s-casos.png" alt="Gestão de casos por etapa" loading="lazy"></div>
+ </div>
+
+ <div class="feat inv">
+  <div class="txt">
+   <span class="tag"><i></i>Faturas</span>
+   <h3>Faturas profissionais com Pix</h3>
+   <p>Feche a cobrança com os casos entregues, com a sua logo, os seus contatos e o QR Code do Pix, e envie pelo WhatsApp ou em PDF.</p>
+   <ul class="lista"><li>Sua marca na fatura</li><li>QR Code do Pix pronto para pagar</li><li>Acompanhe: pendente, enviada, paga</li></ul>
+  </div>
+  <div style="max-width:560px;margin:0 auto" class="tela"><img src="imagens/s-fatura-doc.png" alt="Fatura com QR Code do Pix" loading="lazy"></div>
+ </div>
+
+ <div class="feat">
+  <div class="txt">
+   <span class="tag"><i></i>Financeiro</span>
+   <h3>Financeiro sem planilha</h3>
+   <p>Receita do período, valores recebidos, o que está em aberto e o desempenho de cada cliente, sempre atualizados.</p>
+   <ul class="lista"><li>Casos entregues prontos para cobrar</li><li>Saldo devedor e adiantamentos</li><li>Relatórios de receita, ticket médio e lucro</li></ul>
+  </div>
+  <div class="tela"><div class="barra"><b></b><b></b><b></b></div><img src="imagens/s-relatorios.png" alt="Relatórios financeiros" loading="lazy"></div>
+ </div>
+
+ <div class="mini">
+  <div class="card"><h4>Serviços com preço por elemento</h4><p>Cadastre coroa, faceta, waxup, protocolo… e o valor de cada caso sai sozinho.</p></div>
+  <div class="card"><h4>Clientes no Brasil e no exterior</h4><p>Trabalha com dólar ou euro? O sistema mostra a cotação do dia.</p></div>
+  <div class="card"><h4>Agenda e lembretes</h4><p>Tarefas e prazos no mesmo lugar, para você não esquecer nenhuma entrega.</p></div>
+ </div>
+</div></section>
+
+<section><div class="w">
+ <div class="duas">
+  <div class="card">
+   <span class="tag"><i></i>Privacidade</span>
+   <h3 style="font-size:1.5rem;margin:16px 0 10px">Seus dados ficam com você</h3>
+   <p>O Gestão de CAD funciona no seu computador, direto no navegador (Chrome ou Edge). Seus clientes, pacientes e valores ficam guardados com você, não em servidores de terceiros. E tem backup automático numa pasta do seu computador.</p>
+  </div>
+  <div class="card">
+   <span class="tag"><i></i>Atualizações</span>
+   <h3 style="font-size:1.5rem;margin:16px 0 10px">Sempre atualizado</h3>
+   <p>Na assinatura você recebe todas as versões novas enquanto ela estiver ativa. Quando sai uma versão nova, o próprio sistema avisa e você atualiza com um clique, sem perder seus dados.</p>
+  </div>
+ </div>
+</div></section>
+
+<section class="faixa"><div class="w">
+ <div class="centro">
+  <span class="tag"><i></i>Quem criou</span>
+  <h2 style="margin-top:18px">De quem trabalha com CAD todos os dias</h2>
+  <p class="sub">O Gestão de CAD foi desenvolvido pela HDC Works, por quem vive o CAD odontológico na prática e sentiu na pele a falta de uma ferramenta feita para essa rotina.</p>
+ </div>
+</div></section>
+
+<section><div class="w">
+ <div class="centro">
+  <span class="tag"><i></i>Depois da compra</span>
+  <h2 style="margin-top:18px">Em minutos você já está usando</h2>
+ </div>
+ <div class="passos">
+  <div class="card"><p>Você acessa a área de membros e baixa o sistema.</p></div>
+  <div class="card"><p>Abre no Chrome ou no Edge e envia o código do seu computador pelo WhatsApp.</p></div>
+  <div class="card"><p>Recebe a sua chave de ativação e começa, com um passo a passo para cadastrar seus serviços e clientes.</p></div>
+ </div>
+</div></section>
+
+<section id="oferta" class="faixa"><div class="w">
+ <div class="centro">
+  <span class="tag"><i></i>Assinatura</span>
+  <h2 style="margin-top:18px">Organize seu negócio de CAD hoje</h2>
+ </div>
+ <div class="oferta">
+  <div style="font-weight:600">Gestão de CAD · Assinatura mensal</div>
+  <div class="preco"><b class="ouro">R$ 40</b><span>por mês</span></div>
+  <ul class="lista">
+   <li>Todas as funções do sistema</li>
+   <li>Todas as atualizações enquanto a assinatura estiver ativa</li>
+   <li>Suporte por WhatsApp</li>
+   <li>Licença para 1 computador, com 1 troca grátis por ano</li>
+   <li>Cancele quando quiser, sem multa</li>
+  </ul>
+  <a class="btn btn-ouro" href="https://pay.hotmart.com/T108204122L">Assinar agora</a>
+  <div class="garantia"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5ec8d8" stroke-width="2" style="flex:none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><div><b>Garantia de 7 dias.</b> Se não gostar, peça o reembolso em até 7 dias e devolvemos 100% do valor.</div></div>
+ </div>
+ <p class="alt">Prefere pagamento único? Também tem, por <b>R$ 197</b> (sem atualizações). <a href="https://wa.me/5511939318325?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Gest%C3%A3o%20de%20CAD%20com%20pagamento%20%C3%BAnico.">Fale no WhatsApp</a></p>
+</div></section>
+
+<section><div class="w">
+ <div class="centro"><span class="tag"><i></i>Dúvidas</span><h2 style="margin-top:18px">Perguntas frequentes</h2></div>
+ <div class="faq">
+  <details><summary>Preciso de internet para usar?</summary><p>Não para o dia a dia: o sistema funciona no seu computador. A internet é usada para carregar as fontes, buscar a cotação do dólar e do euro, avisar sobre versões novas e confirmar a sua assinatura (o sistema envia só o e-mail da compra). Abra o sistema conectado à internet pelo menos uma vez por mês.</p></details>
+  <details><summary>Funciona no Mac?</summary><p>Sim, desde que você use o Google Chrome ou o Microsoft Edge.</p></details>
+  <details><summary>Posso usar em mais de um computador?</summary><p>A licença vale para 1 computador. Trocou de computador ou formatou? Você tem 1 troca grátis por ano.</p></details>
+  <details><summary>E se eu cancelar a assinatura?</summary><p>O sistema fica disponível até o fim do período pago. Depois ele é bloqueado, mas seus dados continuam no seu computador e podem ser exportados.</p></details>
+  <details><summary>Onde ficam salvos os meus dados?</summary><p>No navegador do seu computador, com opção de backup automático numa pasta. A HDC Works não tem acesso a eles.</p></details>
+  <details><summary>Tem versão com pagamento único?</summary><p>Sim, por R$ 197, sem atualizações. Fale com a gente pelo <a href="https://wa.me/5511939318325">WhatsApp (11) 93931-8325</a>.</p></details>
+  <details><summary>Posso testar antes?</summary><p>Sim! Peça um teste grátis de 7 dias pelo <a href="https://wa.me/5511939318325?text=Ol%C3%A1!%20Quero%20testar%20o%20Gest%C3%A3o%20de%20CAD%20por%207%20dias.">WhatsApp (11) 93931-8325</a>.</p></details>
+ </div>
+</div></section>
+
+<footer><div class="w">
+ <div>Gestão de CAD · desenvolvido por <b style="color:var(--t)">HDC Works</b></div>
+ <div>Suporte: <a href="https://wa.me/5511939318325">WhatsApp (11) 93931-8325</a> · <a href="mailto:hanieldentalcad@gmail.com">hanieldentalcad@gmail.com</a></div>
+</div></footer>
+
+</body>
+</html>

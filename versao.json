@@ -1,0 +1,9 @@
+{
+  "build": 107,
+  "versao": "1.7",
+  "lancada": "2026-10-27",
+  "novidades": [
+    "Download das versões novas protegido: só quem tem licença válida consegue baixar",
+    "Renovação automática da assinatura pela Hotmart"
+  ]
+}
