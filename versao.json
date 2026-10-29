@@ -1,9 +1,11 @@
 {
-  "build": 109,
-  "versao": "1.9",
-  "lancada": "2026-10-27",
+  "build": 200,
+  "versao": "2.0",
+  "lancada": "2026-10-29",
   "novidades": [
-    "Proteção extra da licença",
-    "Política de Privacidade atualizada"
+    "Ativação automática com o e-mail da compra",
+    "Relatório mensal em PDF para o contador",
+    "Botão para enviar sugestões ou relatar problemas",
+    "Novo plano anual com 3 meses grátis"
   ]
 }
