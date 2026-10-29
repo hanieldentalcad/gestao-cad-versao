@@ -74,6 +74,14 @@ h2{font-size:clamp(1.8rem,3.8vw,2.7rem);line-height:1.12;font-weight:700;letter-
 .preco b{font-size:3.4rem;font-weight:800;letter-spacing:-.02em}
 .preco span{color:var(--m)}
 .oferta .btn{width:100%;margin-top:28px;font-size:1.05rem}
+.ofertas{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:900px;margin:44px auto 0;align-items:stretch}
+.ofertas .oferta{margin:0;max-width:none;display:flex;flex-direction:column;position:relative}
+.ofertas .oferta .btn{margin-top:auto}
+.ofertas .oferta .lista{margin-bottom:28px}
+.oferta.destaque{border-color:rgba(217,180,106,.75);box-shadow:0 0 90px rgba(217,180,106,.16)}
+.selo{position:absolute;top:-14px;right:24px;background:linear-gradient(100deg,#f0d390,#d9b46a);color:#120e05;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:999px}
+.equiv{color:var(--m);font-size:.9rem;margin-top:2px}
+.oferta-garantia{max-width:900px;margin:18px auto 0}
 .garantia{display:flex;gap:14px;align-items:flex-start;margin-top:22px;padding:16px;border-radius:14px;background:rgba(94,200,216,.06);border:1px solid rgba(94,200,216,.25);font-size:.9rem;color:#cfeef3}
 .alt{text-align:center;color:var(--m);font-size:.92rem;margin-top:22px}
 .alt a{color:var(--g)}
@@ -88,6 +96,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;color:var(--m);font-size:
 footer .w{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 footer a{text-decoration:none}
 @media (max-width:860px){
+ .ofertas{grid-template-columns:1fr}
  section{padding:72px 0}
  .dor,.mini,.passos,.duas{grid-template-columns:1fr}
  .feat,.feat.inv{grid-template-columns:1fr;gap:28px;margin-top:64px}
@@ -102,7 +111,7 @@ footer a{text-decoration:none}
 
 <nav><div class="w">
  <a class="marca" href="#"><span class="logo">G</span>Gestão de CAD</a>
- <a class="btn btn-ouro" href="#oferta">Assinar — R$ 40/mês</a>
+ <a class="btn btn-ouro" href="#oferta">Assinar</a>
 </div></nav>
 
 <header class="hero"><div class="w">
@@ -113,7 +122,7 @@ footer a{text-decoration:none}
   <a class="btn btn-ouro" href="#oferta">Quero organizar meus casos</a>
   <a class="btn btn-linha" href="#recursos">Ver o sistema por dentro</a>
  </div>
- <small>R$ 40 por mês · cancele quando quiser · garantia de 7 dias</small>
+ <small>R$ 40 por mês ou R$ 360 por ano (3 meses grátis) · garantia de 7 dias</small>
  <div class="tela"><div class="barra"><b></b><b></b><b></b></div><img src="imagens/s-visao.png" alt="Visão geral do Gestão de CAD com receita, valores recebidos e gráfico do período" loading="eager"></div>
 </div></header>
 
@@ -203,8 +212,8 @@ footer a{text-decoration:none}
  </div>
  <div class="passos">
   <div class="card"><p>Você acessa a área de membros e baixa o sistema.</p></div>
-  <div class="card"><p>Abre no Chrome ou no Edge e envia o código do seu computador pelo WhatsApp.</p></div>
-  <div class="card"><p>Recebe a sua chave de ativação e começa, com um passo a passo para cadastrar seus serviços e clientes.</p></div>
+  <div class="card"><p>Abre no Chrome ou no Edge e digita o e-mail que você usou na compra.</p></div>
+  <div class="card"><p>O sistema ativa na hora e você começa, com um passo a passo para cadastrar seus serviços e clientes.</p></div>
  </div>
 </div></section>
 
@@ -213,8 +222,9 @@ footer a{text-decoration:none}
   <span class="tag"><i></i>Assinatura</span>
   <h2 style="margin-top:18px">Organize seu negócio de CAD hoje</h2>
  </div>
+ <div class="ofertas">
  <div class="oferta">
-  <div style="font-weight:600">Gestão de CAD · Assinatura mensal</div>
+  <div style="font-weight:600">Assinatura mensal</div>
   <div class="preco"><b class="ouro">R$ 40</b><span>por mês</span></div>
   <ul class="lista">
    <li>Todas as funções do sistema</li>
@@ -223,7 +233,22 @@ footer a{text-decoration:none}
    <li>Licença para 1 computador, com 1 troca grátis por ano</li>
    <li>Cancele quando quiser, sem multa</li>
   </ul>
-  <a class="btn btn-ouro" href="https://pay.hotmart.com/T108204122L">Assinar agora</a>
+  <a class="btn btn-linha" href="https://pay.hotmart.com/T108204122L">Assinar mensal</a>
+ </div>
+ <div class="oferta destaque">
+  <span class="selo">3 meses grátis</span>
+  <div style="font-weight:600">Assinatura anual</div>
+  <div class="preco"><b class="ouro">R$ 360</b><span>por ano</span></div>
+  <p class="equiv">12 meses pelo preço de 9 · equivale a R$ 30 por mês</p>
+  <ul class="lista">
+   <li>Tudo do plano mensal</li>
+   <li>Você economiza R$ 120 no ano</li>
+   <li>Uma única cobrança por ano</li>
+  </ul>
+  <a class="btn btn-ouro" href="__URL_ANUAL__">Assinar anual</a>
+ </div>
+ </div>
+ <div class="oferta-garantia">
   <div class="garantia"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5ec8d8" stroke-width="2" style="flex:none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><div><b>Garantia de 7 dias.</b> Se não gostar, peça o reembolso em até 7 dias e devolvemos 100% do valor.</div></div>
  </div>
  <p class="alt">Prefere pagamento único? Também tem, por <b>R$ 197</b> (sem atualizações). <a href="https://wa.me/5511939318325?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Gest%C3%A3o%20de%20CAD%20com%20pagamento%20%C3%BAnico.">Fale no WhatsApp</a></p>
