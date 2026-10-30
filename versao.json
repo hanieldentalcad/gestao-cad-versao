@@ -1,11 +1,11 @@
 {
-  "build": 200,
-  "versao": "2.0",
-  "lancada": "2026-10-29",
+  "build": 201,
+  "versao": "2.1",
+  "lancada": "2026-10-30",
   "novidades": [
-    "Ativação automática com o e-mail da compra",
-    "Relatório mensal em PDF para o contador",
-    "Botão para enviar sugestões ou relatar problemas",
-    "Novo plano anual com 3 meses grátis"
+    "Prazo de entrega em cada caso, com avisos e calendário",
+    "Tabela de preço combinada com cada cliente",
+    "Aba Despesas com o lucro real do mês",
+    "Metas do mês na Visão geral (opcional)"
   ]
 }
