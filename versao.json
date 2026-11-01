@@ -1,11 +1,10 @@
 {
-  "build": 201,
-  "versao": "2.1",
-  "lancada": "2026-10-30",
+  "build": 202,
+  "versao": "2.2",
+  "lancada": "2026-11-01",
   "novidades": [
-    "Prazo de entrega em cada caso, com avisos e calendário",
-    "Tabela de preço combinada com cada cliente",
-    "Aba Despesas com o lucro real do mês",
-    "Metas do mês na Visão geral (opcional)"
+    "Proteção reforçada: o sistema agora é cifrado e só abre com a sua licença",
+    "Na primeira abertura da 2.2, conecte-se à internet uma única vez",
+    "Seus dados, licença e configurações continuam exatamente iguais"
   ]
 }
