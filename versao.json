@@ -1,11 +1,12 @@
 {
-  "build": 203,
-  "versao": "2.3",
+  "build": 204,
+  "versao": "2.4",
   "lancada": "2026-11-02",
   "novidades": [
-    "Relatório geral na aba Relatórios: tudo o que aconteceu no período escolhido",
-    "Resumo, mês a mês, por cliente, por serviço, recebimentos, despesas, terceirizados e casos",
-    "Salve em PDF ou baixe uma planilha do Excel com 8 abas",
+    "Sistema mais rápido: busca, biblioteca, relatórios e animações mais leves",
+    "Mais segurança com os dados: se o sistema estiver aberto em outra janela, ele avisa e não grava por cima",
+    "Número da OS nunca se repete e importar backup pede confirmação",
+    "Várias correções em faturas, saldo, despesas fixas, clientes e tarefas",
     "Seus dados, licença e configurações continuam exatamente iguais"
   ]
 }
