@@ -1,10 +1,11 @@
 {
-  "build": 202,
-  "versao": "2.2",
-  "lancada": "2026-11-01",
+  "build": 203,
+  "versao": "2.3",
+  "lancada": "2026-11-02",
   "novidades": [
-    "Proteção reforçada: o sistema agora é cifrado e só abre com a sua licença",
-    "Na primeira abertura da 2.2, conecte-se à internet uma única vez",
+    "Relatório geral na aba Relatórios: tudo o que aconteceu no período escolhido",
+    "Resumo, mês a mês, por cliente, por serviço, recebimentos, despesas, terceirizados e casos",
+    "Salve em PDF ou baixe uma planilha do Excel com 8 abas",
     "Seus dados, licença e configurações continuam exatamente iguais"
   ]
 }
