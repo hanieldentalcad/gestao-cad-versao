@@ -1,12 +1,11 @@
 {
-  "build": 204,
-  "versao": "2.4",
+  "build": 205,
+  "versao": "2.5",
   "lancada": "2026-11-02",
   "novidades": [
-    "Sistema mais rápido: busca, biblioteca, relatórios e animações mais leves",
-    "Mais segurança com os dados: se o sistema estiver aberto em outra janela, ele avisa e não grava por cima",
-    "Número da OS nunca se repete e importar backup pede confirmação",
-    "Várias correções em faturas, saldo, despesas fixas, clientes e tarefas",
+    "Valor em aberto na Gestão de casos: ao lado de \"casos pendentes\" aparece quanto ainda vai entrar",
+    "O valor respeita a busca e já desconta o que o adiantamento do cliente cobre",
+    "Clique nele para ver o detalhe por cliente e por caso",
     "Seus dados, licença e configurações continuam exatamente iguais"
   ]
 }
