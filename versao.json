@@ -1,11 +1,11 @@
 {
-  "build": 205,
-  "versao": "2.5",
-  "lancada": "2026-11-02",
+  "build": 206,
+  "versao": "2.6",
+  "lancada": "2026-11-04",
   "novidades": [
-    "Valor em aberto na Gestão de casos: ao lado de \"casos pendentes\" aparece quanto ainda vai entrar",
-    "O valor respeita a busca e já desconta o que o adiantamento do cliente cobre",
-    "Clique nele para ver o detalhe por cliente e por caso",
-    "Seus dados, licença e configurações continuam exatamente iguais"
+    "Sua licença e seus dados não se perdem mais se o arquivo abrir em outro navegador",
+    "Nas próximas atualizações, o arquivo baixado já leva sua licença e seus dados junto (protegidos para este computador)",
+    "Atualização do navegador ou do driver de vídeo não derruba mais a licença",
+    "Importante: abra o arquivo novo no MESMO navegador que você usa (botão direito no arquivo > Abrir com)"
   ]
 }
