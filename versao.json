@@ -1,12 +1,12 @@
 {
-  "build": 207,
-  "versao": "2.7",
-  "lancada": "2026-11-04",
+  "build": 208,
+  "versao": "2.8",
+  "lancada": "2026-11-05",
   "novidades": [
-    "Nova seção \"Data de recebimento\" na janela do caso: registre o dia em que você recebeu o caso",
-    "Prazo de entrega agora com botão para ligar e desligar; o prazo sugerido conta a partir da data de recebimento",
-    "Casos novos começam com recebimento, prazo e terceirização desligados",
-    "Importante: abra o arquivo novo no MESMO navegador que você usa (botão direito no arquivo > Abrir com)",
-    "A partir desta versão, as próximas atualizações já levam sua licença e seus dados junto"
+    "10 fontes novas com cara de tecnologia, e a fonte escolhida agora muda o sistema inteiro",
+    "Novo tema Magnificus, no lugar do Aurora 1: universo com nebulosas, Via Láctea e estrelas que cintilam",
+    "Visão geral com um articulador feito de estrelas; cada aba com uma constelação e a assinatura de um mestre da prótese",
+    "Correções: nomes no gráfico de faturamento agora aparecem; no celular, a tela de Serviços não rola mais para os lados",
+    "Seus dados não mudam. Importante: abra o arquivo novo no MESMO navegador que você usa (botão direito no arquivo > Abrir com)"
   ]
 }
