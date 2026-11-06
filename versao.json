@@ -1,12 +1,10 @@
 {
-  "build": 208,
-  "versao": "2.8",
-  "lancada": "2026-11-05",
+  "build": 209,
+  "versao": "2.9",
+  "lancada": "2026-11-06",
   "novidades": [
-    "10 fontes novas com cara de tecnologia, e a fonte escolhida agora muda o sistema inteiro",
-    "Novo tema Magnificus, no lugar do Aurora 1: universo com nebulosas, Via Láctea e estrelas que cintilam",
-    "Visão geral com um articulador feito de estrelas; cada aba com uma constelação e a assinatura de um mestre da prótese",
-    "Correções: nomes no gráfico de faturamento agora aparecem; no celular, a tela de Serviços não rola mais para os lados",
+    "Correção: em telas mais baixas (notebook), o menu lateral agora rola até o fim. Backup, Licença e o seu perfil sempre aparecem",
+    "Tudo da 2.8 continua: 10 fontes novas e o tema Magnificus",
     "Seus dados não mudam. Importante: abra o arquivo novo no MESMO navegador que você usa (botão direito no arquivo > Abrir com)"
   ]
 }
