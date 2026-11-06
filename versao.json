@@ -1,12 +1,12 @@
 {
-  "build": 300,
-  "versao": "3.0",
+  "build": 301,
+  "versao": "3.1",
   "lancada": "2026-11-06",
+  "fimNavegador": "2026-11-07T16:18:00-03:00",
   "novidades": [
-    "O Gestão de CAD agora é um aplicativo para Windows: ícone na área de trabalho, licença e dados sempre no lugar e atualização com um clique",
-    "Depois de atualizar, um passo a passo mostra como instalar o aplicativo e levar sua licença e seus dados (baixe em hanieldentalcad.com/gestao-de-cad)",
-    "Gestão de casos: ao filtrar por status, o botão \"Gerar relatório\" monta um relatório com esses casos, com filtro de cliente e tudo editável",
-    "O relatório sai em PDF, em planilha do Excel ou como texto para o WhatsApp",
-    "Seus dados não mudam. Importante: abra o arquivo novo no MESMO navegador que você usa (botão direito no arquivo > Abrir com)"
+    "ATENÇÃO: a versão de navegador do Gestão de CAD será desligada em 07/11 às 16:18. Instale o aplicativo em hanieldentalcad.com/gestao-de-cad (seus dados vão junto)",
+    "No aplicativo, os PDFs (relatórios e faturas) são salvos direto, sem passar pela impressora do Windows",
+    "Depois de trazer os dados do navegador, o aplicativo pede a pasta do backup automático (é só uma vez)",
+    "Seus dados não mudam. No navegador: abra o arquivo novo no MESMO navegador que você usa (botão direito no arquivo > Abrir com)"
   ]
 }
