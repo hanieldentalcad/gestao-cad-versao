@@ -1,12 +1,12 @@
 {
-  "build": 303,
-  "versao": "3.3",
+  "build": 304,
+  "versao": "3.4",
   "lancada": "2026-11-06",
   "fimNavegador": "2026-11-07T16:18:00-03:00",
   "novidades": [
     "ATENÇÃO: a versão de navegador do Gestão de CAD será desligada em 07/11 às 16:18. Instale o aplicativo em hanieldentalcad.com/gestao-de-cad (seus dados vão junto)",
+    "Segurança: no aplicativo, o código de cada computador passa a ser único (dois computadores iguais não têm mais o mesmo código). Quem já tem chave não precisa fazer nada",
     "Segurança: o arquivo que leva seus dados do navegador para o aplicativo vale em um computador só (ninguém consegue usar a sua licença com uma cópia dele)",
-    "No aplicativo, os PDFs (relatórios e faturas) são salvos direto, sem passar pela impressora do Windows",
-    "Depois de trazer os dados do navegador, o aplicativo pede a pasta do backup automático (é só uma vez)"
+    "No aplicativo, os PDFs (relatórios e faturas) são salvos direto, sem passar pela impressora do Windows"
   ]
 }

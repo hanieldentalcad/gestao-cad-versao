@@ -1,6 +1,6 @@
 {
-  "versao": "1.4.0",
+  "versao": "1.5.0",
   "url": "https://raw.githubusercontent.com/hanieldentalcad/gestao-cad-versao/main/app/Gestao-de-CAD-Instalador.exe",
-  "sha256": "eb41a881253e3ac90c1db1d3a86f00439e0d277d1737c664cc8c955154b496c0",
-  "novidades": "Segurança: o arquivo que leva seus dados do navegador para o aplicativo passa a valer em um computador só. Seus dados e sua licença continuam iguais."
+  "sha256": "782bd9db2166af6a14dec7049e5bcd747a830a41a569553037e4447a55ad5636",
+  "novidades": "Segurança: o código deste computador passa a ser único. Seus dados e sua licença continuam iguais."
 }
