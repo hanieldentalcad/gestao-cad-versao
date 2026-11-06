@@ -1,10 +1,12 @@
 {
-  "build": 209,
-  "versao": "2.9",
+  "build": 300,
+  "versao": "3.0",
   "lancada": "2026-11-06",
   "novidades": [
-    "Correção: em telas mais baixas (notebook), o menu lateral agora rola até o fim. Backup, Licença e o seu perfil sempre aparecem",
-    "Tudo da 2.8 continua: 10 fontes novas e o tema Magnificus",
+    "O Gestão de CAD agora é um aplicativo para Windows: ícone na área de trabalho, licença e dados sempre no lugar e atualização com um clique",
+    "Depois de atualizar, um passo a passo mostra como instalar o aplicativo e levar sua licença e seus dados (baixe em hanieldentalcad.com/gestao-de-cad)",
+    "Gestão de casos: ao filtrar por status, o botão \"Gerar relatório\" monta um relatório com esses casos, com filtro de cliente e tudo editável",
+    "O relatório sai em PDF, em planilha do Excel ou como texto para o WhatsApp",
     "Seus dados não mudam. Importante: abra o arquivo novo no MESMO navegador que você usa (botão direito no arquivo > Abrir com)"
   ]
 }
