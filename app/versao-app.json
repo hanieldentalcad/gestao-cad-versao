@@ -1,6 +1,6 @@
 {
-  "versao": "1.1.0",
+  "versao": "1.2.0",
   "url": "https://raw.githubusercontent.com/hanieldentalcad/gestao-cad-versao/main/app/Gestao-de-CAD-Instalador.exe",
-  "sha256": "4f288d683f5f336e4ed198e284f78700078f4c29078222f3b8c41aabe7cdb328",
-  "novidades": "Backup automático direto na pasta: você escolhe a pasta uma vez e não é mais perguntado."
+  "sha256": "c3394f4004b3150d8bed7918bb02bbfe6f295fa2412e2c938e24c9ff97a4ef58",
+  "novidades": "PDF salvo direto (sem passar pela impressora do Windows) e aviso para ligar o backup automático depois de trazer os dados do navegador."
 }
