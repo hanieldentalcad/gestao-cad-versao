@@ -1,12 +1,13 @@
 {
-  "build": 304,
-  "versao": "3.4",
-  "lancada": "2026-11-06",
+  "build": 305,
+  "versao": "3.5",
+  "lancada": "2026-11-11",
   "fimNavegador": "2026-11-07T16:18:00-03:00",
   "novidades": [
-    "ATENÇÃO: a versão de navegador do Gestão de CAD será desligada em 07/11 às 16:18. Instale o aplicativo em hanieldentalcad.com/gestao-de-cad (seus dados vão junto)",
-    "Segurança: no aplicativo, o código de cada computador passa a ser único (dois computadores iguais não têm mais o mesmo código). Quem já tem chave não precisa fazer nada",
-    "Segurança: o arquivo que leva seus dados do navegador para o aplicativo vale em um computador só (ninguém consegue usar a sua licença com uma cópia dele)",
-    "No aplicativo, os PDFs (relatórios e faturas) são salvos direto, sem passar pela impressora do Windows"
+    "Adiantamentos: encerre a conta quando o adiantamento acabar (fica guardada em \"Contas encerradas\" e pode ser reaberta) ou exclua com opção de desfazer, pelo menu \"Mais opções\"",
+    "Extrato novo: clique no cartão do cliente e veja saldo, o que entrou, o que saiu, o que está reservado e o resumo de cada mês — e envie o extrato ao cliente",
+    "Valores no topo das colunas mostram só o que você ainda vai receber (o que o adiantamento já pagou aparece à parte)",
+    "Novo ranking de faturamento do mês por cliente",
+    "No aplicativo: \"Modo de vídeo compatível\" em Sua licença, para telas que ficam embaçando"
   ]
 }
