@@ -1,13 +1,14 @@
 {
-  "build": 305,
-  "versao": "3.5",
-  "lancada": "2026-11-11",
+  "build": 306,
+  "versao": "3.6",
+  "lancada": "2026-11-12",
   "fimNavegador": "2026-11-07T16:18:00-03:00",
   "novidades": [
-    "Adiantamentos: encerre a conta quando o adiantamento acabar (fica guardada em \"Contas encerradas\" e pode ser reaberta) ou exclua com opção de desfazer, pelo menu \"Mais opções\"",
-    "Extrato novo: clique no cartão do cliente e veja saldo, o que entrou, o que saiu, o que está reservado e o resumo de cada mês — e envie o extrato ao cliente",
-    "Valores no topo das colunas mostram só o que você ainda vai receber (o que o adiantamento já pagou aparece à parte)",
-    "Novo ranking de faturamento do mês por cliente",
-    "No aplicativo: \"Modo de vídeo compatível\" em Sua licença, para telas que ficam embaçando"
+    "Ashortia com vida própria: rotina do dia com touca à noite, travessuras e voos para pousar nos cartões, sem cobrir botões",
+    "Ashortia com emoções do negócio: preocupada com atrasos, radiante com meta ou recorde, confete nos pagamentos e saudade quando você some",
+    "Ashortia reage ao que você faz: acompanha a troca de aba, olha o que você digita, se surpreende com valor alto e tapa os olhos quando os valores são escondidos",
+    "Carinho, cócegas, arrastar para outro canto e nível de amizade com você",
+    "Correção: de madrugada a Ashortia não diz mais \"Bom dia\"",
+    "Seus dados (casos, clientes, valores) não mudam. No perfil passam a ser guardados só a amizade, o lugar da Ashortia, o último dia de uso, o último recorde comemorado e a opção \"Ficar quietinha\""
   ]
 }
