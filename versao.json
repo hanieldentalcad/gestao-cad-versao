@@ -1,14 +1,13 @@
 {
-  "build": 306,
-  "versao": "3.6",
+  "build": 307,
+  "versao": "3.7",
   "lancada": "2026-11-12",
   "fimNavegador": "2026-11-07T16:18:00-03:00",
   "novidades": [
-    "Ashortia com vida própria: rotina do dia com touca à noite, travessuras e voos para pousar nos cartões, sem cobrir botões",
-    "Ashortia com emoções do negócio: preocupada com atrasos, radiante com meta ou recorde, confete nos pagamentos e saudade quando você some",
-    "Ashortia reage ao que você faz: acompanha a troca de aba, olha o que você digita, se surpreende com valor alto e tapa os olhos quando os valores são escondidos",
-    "Carinho, cócegas, arrastar para outro canto e nível de amizade com você",
-    "Correção: de madrugada a Ashortia não diz mais \"Bom dia\"",
-    "Seus dados (casos, clientes, valores) não mudam. No perfil passam a ser guardados só a amizade, o lugar da Ashortia, o último dia de uso, o último recorde comemorado e a opção \"Ficar quietinha\""
+    "Gestão de casos: novo botão \"Terceirizados\" na faixa de status, que mostra os casos em colunas por cadista terceirizado",
+    "Em cada coluna: os cartões dos casos com o cliente de cada um, a quantidade de casos e o valor total da terceirização",
+    "O relatório dos casos filtrados também funciona para os terceirizados",
+    "No aplicativo, com o \"Modo de vídeo compatível\" ligado, os efeitos ficam mais leves para não pesar",
+    "Seus dados: nada muda na forma como ficam salvos"
   ]
 }

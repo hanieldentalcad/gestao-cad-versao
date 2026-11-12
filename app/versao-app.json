@@ -1,6 +1,6 @@
 {
-  "versao": "1.7.0",
+  "versao": "1.8.0",
   "url": "https://raw.githubusercontent.com/hanieldentalcad/gestao-cad-versao/main/app/Gestao-de-CAD-Instalador.exe",
-  "sha256": "1caa5d6e35cbd59af475ca74cd54a83e0a7069266ea6a9904be32aca5623db5e",
-  "novidades": "Versão 3.6: a Ashortia ganhou vida própria, emoções e reações. Seus dados e sua licença continuam iguais."
+  "sha256": "456409061d7e8e705c242fe2bc181c085b6d18497ce2937bc5b27e8776b2e9de",
+  "novidades": "Versão 3.7: casos terceirizados em colunas por cadista. Seus dados e sua licença continuam iguais."
 }
