@@ -1,6 +1,6 @@
 {
-  "versao": "1.8.0",
+  "versao": "1.9.0",
   "url": "https://raw.githubusercontent.com/hanieldentalcad/gestao-cad-versao/main/app/Gestao-de-CAD-Instalador.exe",
-  "sha256": "456409061d7e8e705c242fe2bc181c085b6d18497ce2937bc5b27e8776b2e9de",
-  "novidades": "Versão 3.7: casos terceirizados em colunas por cadista. Seus dados e sua licença continuam iguais."
+  "sha256": "b1ab4d1b75213a315284af140428cdc0632db548c220db3847cc5d5ce7167bb7",
+  "novidades": "Versão 3.8: pagamento único vitalício, com todas as atualizações incluídas. Seus dados e sua licença continuam iguais."
 }

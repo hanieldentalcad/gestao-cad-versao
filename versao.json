@@ -1,13 +1,11 @@
 {
-  "build": 307,
-  "versao": "3.7",
-  "lancada": "2026-11-12",
+  "build": 308,
+  "versao": "3.8",
+  "lancada": "2026-11-13",
   "fimNavegador": "2026-11-07T16:18:00-03:00",
   "novidades": [
-    "Gestão de casos: novo botão \"Terceirizados\" na faixa de status, que mostra os casos em colunas por cadista terceirizado",
-    "Em cada coluna: os cartões dos casos com o cliente de cada um, a quantidade de casos e o valor total da terceirização",
-    "O relatório dos casos filtrados também funciona para os terceirizados",
-    "No aplicativo, com o \"Modo de vídeo compatível\" ligado, os efeitos ficam mais leves para não pesar",
+    "Pagamento único agora é vitalício: todas as atualizações já estão incluídas e chegam direto pelo aplicativo",
+    "Na tela \"Sua licença\", o plano mostra claramente o que está incluído",
     "Seus dados: nada muda na forma como ficam salvos"
   ]
 }
